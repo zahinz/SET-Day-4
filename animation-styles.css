@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(49, 49, 49);
+}
+
+#container {
+    width: auto;
+    height: auto;
+    padding: 20px 0;
+}
+
+#image-holder {
+    height: 877px;
+    width: 620px;
+    background-image: url(animation-assets/bg-2.png);
+    background-size: contain;
+    margin: auto;
+    position: relative;
+}
+
+/* MIDDLE ELEMENT */
+
+#element-middle {
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    /* background-color: rgb(255, 0, 0); */
+    top: 220px;
+    left: 60px;
+}
+
+.middle-white-bar-1 {
+    height: 5px;
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation-name: whiteBarAnimate1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+    @keyframes whiteBarAnimate1 {
+        0% {
+            width: 0;
+        }
+        50% {
+            width: 350px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+
+.middle-white-bar-2 {
+    height: 5px;
+    width: 350px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation-name: whiteBarAnimate2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+    @keyframes whiteBarAnimate2 {
+        0% {
+            width: 0;
+        }
+        50% {
+            width: 350px;
+        }
+        100% {
+            width: 0;
+        }
+    }
+
+.middle-text-1 {
+    position: absolute;
+    color: white;
+    font-size: 7.3rem;
+    top: 10px;
+    left: 0;
+    letter-spacing: 10px;
+    z-index: 10;
+}
+.middle-text-2 {
+    position: absolute;
+    color: white;
+    font-size: 5.2rem;
+    top: 155px;
+    right: 0;
+    letter-spacing: 10px;
+}
+.middle-text-3 {
+    position: absolute;
+    color: white;
+    font-size: 7.3rem;
+    bottom: 10px;
+    left: 0;
+    letter-spacing: 10px;
+}
+
+.middle-image-1 {
+    position: absolute;
+    width: 58%;
+    top: -4px;
+    left: 194px;
+    z-index: 1;
+    animation-name: animateImage;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+    @keyframes animateImage {
+        0% {
+            transform: scale(0);
+            /* opacity: 0; */
+        }
+        50% {
+            transform: scale(100%);
+            /* opacity: 1; */
+        }
+        100% {
+            transform: scale(0);
+            /* opacity: 0; */
+        }
+    }
+
+.middle-image-2 {
+    position: absolute;
+    width: 33%;
+    top: 126px;
+    left: 82px;
+    animation-name: animateImage;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    animation-delay: 500ms;
+}
+
+.middle-image-3 {
+    position: absolute;
+    width: 45%;
+    bottom: -16px;
+    right: 76px;
+    animation-name: animateImage;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+/* TOP LEFT ELEMENT */
+
+#element-top-left {
+    height: 200px;
+    width: 200px;
+    /* background-color: yellow; */
+    position: relative;
+    top: 0;
+    left: 70px;
+}
+
+.top-left-white-bar {
+    height: 150px;
+    width: 5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-left-text-1 {
+    position: absolute;
+    color: white;
+    top: 85px;
+    left: 70px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.top-left-text-2 {
+    position: absolute;
+    color: white;
+    top: 100px;
+    left: 15px;
+}
+
+.top-left-text-2 h3 {
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+
+.top-left-text-2 h2 {
+    font-size: 2rem;
+}
+
+.top-left-text-1 h3 {
+    font-weight: 800;
+}
+
+/* TOP RIGHT ELEMENT */
+
+#element-top-right {
+    width: 155px;
+    height: 25px;
+    /* background-color: blue; */
+    position: absolute;
+    top: 75px;
+    right: 62px;
+}
+
+.top-right-3-squares {
+    height: auto;
+    width: auto;
+    position: absolute;
+}
+
+.top-right-single-square-1 {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.top-right-single-square-2 {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 14px;
+}
+.top-right-single-square-3 {
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+
+.top-right-text {
+    position: absolute;
+    top: -3.1px;
+    left: 35px;
+}
+
+.top-right-text h3 {
+    font-size: 0.85rem;
+    color: white;
+}
+
+.top-right-white-bar {
+    width: 70px;
+    height: 5px;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0
+}
+
+/* BOTTOM LEFT ELEMENT */
+
+#element-bottom-left {
+    position: absolute;
+    bottom: 100px;
+    left: 60px;
+}
+
+.bottom-left-white-bar {
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.bottom-left-text {
+    color: white;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+/* BOTTOM RIGHT */
+
+#element-bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* background-color: blue; */
+}
+
+.bottom-right-white-bar-1 {
+    width: 5px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+.bottom-right-white-bar-2 {
+    width: 80px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 22px;
+}
+
+.bottom-right-text {
+    padding: 15px 60px 20px 20px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.bottom-right-text h2{
+    font-size: 1.2rem;
+}
+
+.bottom-right-text h3{
+    font-size: 0.7rem;
+}
+
+.bottom-right-text p{
+    font-size: 0.5rem;
+    padding-bottom: 20px;
+}
+
+.subtitle {
+    padding-bottom: 15px;
+}
+
